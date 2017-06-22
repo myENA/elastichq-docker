@@ -1,5 +1,11 @@
-elastichq:
+elastic-hq:
   build: .
   restart: always
   expose:
     - 80
+  environment:
+    SERVICE_NAME: elastiq-hq
+    SERVICE_TAGS: proxy-standard
+    SERVICE_CHECK_HTTP: /package.json
+    SERVICE_CHECK_INTERVAL: 20s
+    SERVICE_CHECK_TIMEOUT: 5s
