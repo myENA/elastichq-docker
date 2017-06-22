@@ -4,7 +4,7 @@ elastic-hq:
   expose:
     - 80
   environment:
-    SERVICE_NAME: elastiq-hq
+    SERVICE_NAME: elastic-hq
     SERVICE_TAGS: proxy-standard
     SERVICE_CHECK_HTTP: /package.json
     SERVICE_CHECK_INTERVAL: 20s

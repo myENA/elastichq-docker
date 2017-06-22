@@ -10,7 +10,7 @@ mkdir -p /run/nginx && \
 tar -C /var/www/localhost/htdocs -zvxf /tmp/master.tar.gz && \
 rm /tmp/master.tar.gz
 
-COPY default.conf /etc/nginx/conf.d
+COPY default.conf /etc/nginx/conf.d/
 
 EXPOSE 80
 
