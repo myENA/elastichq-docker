@@ -1,0 +1,5 @@
+elastichq:
+  build: .
+  restart: always
+  expose:
+    - 80
